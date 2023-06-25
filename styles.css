@@ -1,0 +1,568 @@
+/* primery text color  #4B4F51/
+/* title text color #035755*/
+/* accent text color #FA5652*/
+
+/* prymary bg color #FFFFFF*/
+/* secondary bg color #FFFFFF */
+
+/* --primery-font-size: 24px;
+--title-font-size: 32px; */
+
+/* --primary font: Gelion 400*/
+/* titel font: Red Hat Display 700 */
+
+
+:root {
+  --primery-text-color: #4b4f51;
+  --title-text-color: #035755;
+  --accent-text-color: #fa5652;
+  --secondary-bg-color: #ffffff;
+  --primery-font-size: 24px;
+  --title-font-size: 50px;
+  --primery-font-family: 'Gelion', sans-serif ;
+  --title-font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  color: var(--primery-text-color);
+  font-weight: 400;
+  font-size: var(--primery-font-size);
+  line-height: 1.9;
+  text-transform: capitalize;
+  font-family: var(--primery-font-family);
+  padding-top: 37px;
+}
+h1,
+h2,
+h3,
+p {
+  font-size: 18px;
+  line-height: 215%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: var(--title-font-size);
+  color: var(--title-text-color);
+
+  font-family: var(--title-font-family);
+}
+
+section {
+  text-align: center;
+  padding-left: 240px;
+  padding-right: 240px;
+  padding-top: 62px;
+  padding-bottom: 80px;
+}
+
+
+
+.flex {
+  display: flex;
+}
+.container {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(
+    360deg,
+    rgba(255, 241, 241, 0.5) 0%,
+    rgba(255, 241, 241, 0) 108.69%
+  );
+}
+
+.headerMenu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuBar {
+  display: flex;
+}
+.menuBarItem {
+  margin-right: 40px;
+}
+.menuBarLink {
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 1.2px;
+}
+
+.menuBarLink:hover {
+  color: var(--accent-text-color);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoText {
+  color: var(--title-text-color);
+  font-family: var(--title-font-family);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+.logoImg {
+  display: inline;
+  margin-right: 14px;
+  width: 42px;
+  height: 42px;
+}
+
+.button {
+  color: #fb4c47;
+  width: 154px;
+  height: 55px;
+  border: 2px solid #fb4c47;
+  border-radius: 46px;
+  background: rgba(250, 86, 82, 0.15);
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: var(--accent-text-color);
+}
+
+.buttonAccent {
+  width: 250px;
+  height: 80px;
+  border-radius: 65px;
+  color: #ffffff;
+  background-color: var(--accent-text-color);
+  border: 2px solid #fb4c47;
+  animation-name: changeBgColorEndTextcolor;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.buttonAccent:hover {
+  color: #fb4c47;
+  background-color: transparent;
+  animation-play-state: paused;
+}
+
+.Overview {
+  display: flex;
+  padding-right: 0;
+
+}
+
+.whatIsCovid {
+  display: flex;
+    background-image: url("img/path1470.png"), url("img/path1470\ \(1\).png");
+      background-repeat: no-repeat;
+      background-position: 1765px 250px, 1765px 550px;
+}
+
+.sectionImg {
+  width: 610px;
+
+}
+
+.imgOverview {
+  width: 1009px;
+}
+
+.OverviewSectionText {
+  margin-top: 334px;
+      text-align: left;
+}
+
+.OverviewSectionTitle {
+  font-family: var(--title-font-family);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--accent-text-color);
+  margin-bottom: 95px;
+  width: 633px;
+}
+
+.sectionParagraph {
+ 
+  font-size: 24px;
+  margin-bottom: 54px;
+  font-style: normal;
+  line-height: 1.9;
+  text-transform: capitalize;
+}
+
+.sectionTitle {
+  font-size: 29px;
+  color: var(--accent-text-color);
+  font-family: var(--title-font-family);
+}
+
+.whatIsCovid_sectionText {
+  text-align: left;
+}
+.sectionSpan {
+  font-size: var(--title-font-size);
+  font-family: var(--title-font-family);
+  font-weight: 700;
+  color: var(--title-text-color);
+  margin-bottom: 18px;
+}
+
+.Contagion{
+background-image: url("img/path1470-2.png");
+background-repeat: no-repeat;
+    background-position: 130px 889px;
+}
+
+.contagionHeader {
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.contagionParagraph {
+  margin-left: auto;
+  margin-right: auto;
+  width: 570px;
+  margin-bottom: 110px;
+  text-align: center;
+}
+
+.cardImage {
+  width: 270px;
+  height: 250px;
+  margin-bottom: 54px;
+}
+
+.cards {
+  display: flex;
+  margin-right: 31px;
+}
+
+.cardsItem {
+  text-align: center;
+  margin-left: 31px;
+  padding-right: 53px;
+  padding-left: 53px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  width: 460px;
+  height: 575px;
+  background: #ffffff;
+  box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+  transition: transform 1s;
+}
+
+.cardsItem:hover{
+transform: scale(1.1);
+}
+
+.itemTitel {
+  color: var(--title-text-color);
+   
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1.37;
+}
+.Symptoms {
+  background-image: url("img/Path\ 1762.png"), url("img/Path\ 1764.png");
+    background-repeat: no-repeat;
+    background-position: 91px 889px, 1665px 989px
+}
+
+.symptom_paragraph {
+  /* display: block; */
+  width: 716px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Prevention{
+background-image: url("img/1470-0.png"), url("img/virus.png"), url("img/path1470 (2).png");
+background-repeat: no-repeat;
+    background-position: 0px 750px, 1750px 2150px, 1750px 2350px;
+}
+
+.prevention_paragraph {
+  margin-left: auto;
+  margin-right: auto;
+  width: 650px;
+}
+.PreventionList_item {
+  display: flex;
+  padding-top: 75px;
+}
+.PreventionList_titel {
+    font-weight: 500;
+  font-size: 47px;
+  line-height: 147%;
+  text-transform: capitalize;
+  color: #035755;
+}
+
+.number {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin-right: 0;
+  font-family: 'Red Hat Display';
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 145%;
+  text-transform: capitalize;
+  color: #fa5652;
+  background: rgba(250, 86, 82, 0.15);
+  border-radius: 50%;
+}
+
+.PreventionList_item_text{
+      text-align: left;
+      padding-left: 40px;
+      width: 532px;
+}
+
+.LiveReports{
+display: flex;
+}
+
+.mapImage {
+      margin-right: 37px;
+        width: 929px;
+        height: 569px;
+        display: block;
+}
+
+.lupe {
+  position: relative;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 103px;
+  height: 70px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 7px 76px rgba(146, 53, 46, 0.18);
+  border-radius: 4.16667px;
+  transition: transform 500ms, box-shadow 500ms;
+  
+}
+.lupe:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 50px rgba(1, 1, 0, 0.1);
+}
+
+.kompas-div{
+position: absolute;
+display: flex;
+width: 19px;
+height: 193px;
+background: #FFFFFF;
+box-shadow: 0px 5px 50px rgba(104, 33, 28, 0.1);
+border-radius: 5px;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+padding: 30px;
+transition: transform 500ms, box-shadow 500ms;
+}
+
+.kompas-div:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 50px rgba(1, 1, 0, 0.1);
+}
+
+.plus {
+  width: 25px;
+  height: 27px;
+}
+
+.kompas {height: 49px;
+  width: 18px;}
+
+.LiveReport_Card{
+  padding: 53px;
+  width: 469px;
+  height: 635px;
+  background: linear-gradient(360deg, #FFFBFB -79.45%, #FDFDFD 105.35%);
+  box-shadow: 0px 7px 95px rgba(0, 0, 0, 0.07);
+  border-radius: 0px;
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 1.19;
+ color: #13615F;
+
+}
+
+.LiveReport_Card_titel{
+ margin-right: 44px;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+  font-family: var(--primery-font-family);
+}
+.left-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 44px;
+  margin-right: 10px;
+  
+  background: #FFFFFF;
+  box-shadow: 0px 5px 50px rgba(87, 1, 0, 0.1);
+  border: transparent;
+  border-radius: 6.16667px;
+
+}
+
+.left-right:hover{
+  color: #ffffff;
+  background-color: var(--accent-text-color);
+}
+
+.right {
+rotate: 180deg;
+}
+
+.flag{
+  width: 45px;
+  height: 35px;
+  margin-right: 25px;
+}
+.haveQuestionTitel{
+  font-weight: 500;
+    font-size: 64px;
+    line-height: 1.2;
+font-family: var(--primery-font-family);
+  width: 661px;
+  margin-left:auto ;
+  margin-right: auto;
+  margin-bottom: 62px;
+  color: #0C6C44;
+}
+.reportsList{
+  margin-top: 54px;
+}
+
+.reportsList_Item{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 39px;
+  transition: transfotm 1s, box-shadow;
+}
+
+.reportsList_Item:hover{
+transform: scale(1.1);
+box-shadow: 0px 5px 50px rgba(1, 1, 0, 0.1);
+}
+
+.Contact {
+  background-image: url("img/footerVirus.png"), url("img/footerVirus2.png");
+    background-repeat: no-repeat;
+        background-position: 1555px 0px, 1665px 108px;
+}
+.form {
+  justify-content: space-between;
+  align-items: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  width: 790px;
+    height: 114px;
+   
+    border: transparent;
+      background: #FFFFFF;
+      box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
+      border-radius: 65px;
+      font-size: 22px;
+      line-height: 1.18;
+}
+.input {
+margin-left: 41px;
+  font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    width: 100%;
+        height: 100%;
+    border: transparent;
+    border-radius: 65px;
+}
+.footer{
+  padding-left: 100px;
+  padding-right: 100px;
+     font-size: 23px;
+    line-height: 1.2;
+     color: #00402E;
+     
+}
+.buttonForm{
+  margin-right: 17px;
+  animation-name: changeBgColorEndTextcolor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+ 
+}
+
+.socialLinks{
+justify-content: space-between;
+}
+
+
+.Footermenubar{
+  display: flex;
+  justify-content: baseline;
+  font-size: 23px;
+  line-height: 1.2;
+  color: #00402E;
+}
+.Footermenubar_Item{
+  margin-right: 25px;
+}
+.socialLinks_item{
+  margin-right: 10px;
+}
+.FootermenuDiv{
+  justify-content: space-between;
+}
+
+@keyframes changeBgColorEndTextcolor {
+  0% {
+background-color: transparent;
+  color: #FF383D;
+  }
+
+  50% {
+    background-color: #F44A45;
+    color: #FFFFFF;
+  }
+
+  100% {
+    background-color: transparent;
+      color: #FF383D;
+    }
+      
+  }
+.copyrigh {
+ text-align: center;
+}
+
+
